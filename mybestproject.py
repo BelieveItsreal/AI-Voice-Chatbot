@@ -14,7 +14,7 @@ voices = text_speech.getProperty('voices')
 text_speech.setProperty('voice', voices[0].id)
 
 # Load the Vosk model for speech recognition
-model = vosk.Model("D:\\vosk-model-en-in-0.5")
+model = vosk.Model("vosk-model-en-in-0.5")
 recognizer = vosk.KaldiRecognizer(model, 8000)
 
 # Initialize PyAudio for audio input stream
@@ -22,7 +22,7 @@ p = pyaudio.PyAudio()
 stream = p.open(format=pyaudio.paInt16, channels=1, rate=8000, input=True, frames_per_buffer=8000)
 
 async def main():
-    bot = Chatbot(cookie_path='D:\\coding\\python_in_hole\\python code\\cookies.json')
+    bot = Chatbot(cookie_path='cookies.json')
 
     # Speak the prompt out loud
     print("Hello Sir ask you question")

@@ -4,7 +4,7 @@ _This project is a chatbot assistant that can answer questions from speech input
 ## To run this project, you need to install the following library functions:
 
 - **Pyttsx3** for text-to-speech synthesis. You can install it using the command `pip install pyttsx3`.
-- **Vosk** for speech recognition. You can install it using the command `pip install vosk`. You also need to download the Vosk model for Indian English from [here] and place it in your project folder.
+- **Vosk** for speech recognition. You can install it using the command `pip install vosk`. You also need to download the Vosk model for Indian English from [https://alphacephei.com/vosk/] and place it in your project folder.
 - **PyAudio** for audio input stream. You can install it using the command `pip install pyaudio`.
 - **Tkinter** for graphical user interface. You can install it using the command `pip install tk`.
 - **PIL** for image manipulation. You can install it using the command `pip install pillow`.

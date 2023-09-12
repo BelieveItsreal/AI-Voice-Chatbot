@@ -1,6 +1,7 @@
 import asyncio
 import re
 import pyttsx3
+import vosk
 import pyaudio
 import json
 import tkinter as tk
@@ -13,17 +14,19 @@ voices = text_speech.getProperty('voices')
 text_speech.setProperty('voice', voices[0].id)
 
 # Load the Vosk model for speech recognition
-model = vosk.Model("vosk-model-en-in-0.5")
+model = vosk.Model("ADD THE PATH OF YOUR VOSK MODEL")
+recognizer = vosk.KaldiRecognizer(model, 8000)
 
 # Initialize PyAudio for audio input stream
 p = pyaudio.PyAudio()
 stream = p.open(format=pyaudio.paInt16, channels=1, rate=8000, input=True, frames_per_buffer=8000)
 
 async def main():
+    bot = Chatbot(cookie_path='ADD THE COOKIES FILE LOCATION')
 
     # Speak the prompt out loud
     print("Hello Sir ask you question")
-    text_speech.say("Hello Sir ask you question")
+    text_speech.say("Hello Sir ask your question")
     text_speech.runAndWait()
 
     # Listen for speech input

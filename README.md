@@ -1,7 +1,3 @@
-# AI-Voice-Chatbot
-this is the AI Voice assistant chatbot. it can reply any of your questions.
-The Al chatbot is designed to facilitate voice interactions and provide responses in
-both voice and text formats. It possesses the ability to adapt to individual speech
-patterns and accents, enhancing its voice recognition capabilities with each
-interaction. Additionally, the chatbot learns from these exchanges, allowing it to
-improve over time by identifying and rectifying any mistakes made.
+# AI-Voice-Assistant-Chatbot
+## _This project is a chatbot assistant that can answer questions from speech input using EdgeGPT, a powerful natural language generation model. The chatbot can communicate in a creative and engaging way, and also use Bing search results to provide factual information. The chatbot uses the following technologies:
+_
